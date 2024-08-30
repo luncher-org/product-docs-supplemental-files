@@ -25,12 +25,15 @@
               title="Resources"></div>
           <div class="navbar-dropdown">
             <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-            <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                class="fab fa-github"></i>&nbsp;uyuni-docs</a>
-            <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
+            {{#with page.origin}}
+            {{log json this}}
+            <a class="navbar-item" href="{{./webUrl}}"><i
+                class="fab fa-github"></i>&nbsp;{{@root.page.origin.descriptor.title}}</a>
+            <a class="navbar-item" href="{{./webUrl}}/issues"><i
                 class="fab fa-github"></i>&nbsp;Report Issue</a>
             <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/wiki"><i
                 class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+            {{/with}}
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
