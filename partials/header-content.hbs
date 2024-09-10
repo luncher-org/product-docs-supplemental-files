@@ -21,17 +21,20 @@
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-link"><img src="{{uiRootPath}}/img/resources.png" class="langIcon Resurces" alt="Resources"
-              title="Resources"></div>
+          <div class="navbar-link">
+            <img src="{{uiRootPath}}/img/resources.png" class="langIcon Resurces" alt="Resources" title="Resources">
+          </div>
           <div class="navbar-dropdown">
-            <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
             {{#with page.origin}}
-            <a class="navbar-item" href="{{./webUrl}}"><i
-                class="fab fa-github"></i>&nbsp;{{@root.page.origin.descriptor.title}}</a>
-            <a class="navbar-item" href="{{./webUrl}}/issues"><i
-                class="fab fa-github"></i>&nbsp;Report Issue</a>
-            <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/wiki"><i
-                class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+            <a class="navbar-item" href="{{./webUrl}}"><i class="fab fa-github"></i>&nbsp;{{@root.page.origin.descriptor.title}}</a>
+            <div class="has-submenu">
+              <a class="navbar-item" href="#" ><i class="fas fa-file-alt"></i>&nbsp;Report Issue &nbsp;<i class="fas fa-chevron-right"></i></a>
+              <div class="submenu">
+                <a class="navbar-item" href="https://scc.suse.com">SCC (Recommended)</a>
+                <a class="navbar-item" href="{{./webUrl}}/issues">GitHub Issue</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="https://github.com/rancher/product-docs-playbook/blob/main/CONTRIBUTING.md"><i class="fas fa-user-edit"></i>&nbsp;Contribute</a>
             {{/with}}
           </div>
         </div>
