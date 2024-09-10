@@ -442,6 +442,13 @@ tr:last-child {
   border-bottom-color: #c0c2c4;
 }
 
+doc table.tableblock {
+  word-wrap: normal;
+  word-break: keep-all;
+  display: block;
+  overflow-x: auto;
+}
+
 .doc table.tableblock thead th {
   border-bottom: 2.5px solid #c0c2c4;
   padding: .5rem;
