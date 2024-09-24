@@ -792,12 +792,3 @@ div#toctitle {
   margin-left: 20px;
   border-bottom-width: 2px;
 }
-
-.doc {
-  max-width: none;
-  margin: none;
-}
-
-.page {
-  max-width: none;
-}
