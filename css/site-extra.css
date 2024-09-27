@@ -726,7 +726,7 @@ ul {
 .title {
   color: white;
   font-weight: 500;
-  padding-left: 15px;
+  padding: 0 15px;
   background-color: #0C322C;
   font-family: 'Poppins';
   padding-top: 10px;
