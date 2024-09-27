@@ -792,3 +792,14 @@ div#toctitle {
   margin-left: 20px;
   border-bottom-width: 2px;
 }
+
+.api-doc
+.doc {
+  max-width: none;
+  margin: none;
+}
+
+.api-doc
+.page {
+  max-width: none;
+}
