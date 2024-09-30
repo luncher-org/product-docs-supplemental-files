@@ -208,6 +208,14 @@ a.navbar-logo {
   color: #efefef;
 }
 
+.nav-panel-explore .context {
+  gap: 5px;
+}
+
+.nav-panel-explore .context .title {
+  flex: auto;
+}
+
 /* Left Nav Link styles  */
 .is-current-page>.nav-link, .is-current-page>.nav-text {
   font-weight: 700;
@@ -726,7 +734,7 @@ ul {
 .title {
   color: white;
   font-weight: 500;
-  padding: 0 15px;
+  padding-left: 15px;
   background-color: #0C322C;
   font-family: 'Poppins';
   padding-top: 10px;
