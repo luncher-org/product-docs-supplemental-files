@@ -793,13 +793,11 @@ div#toctitle {
   border-bottom-width: 2px;
 }
 
-.api-doc
-.doc {
+.doc:has(.api-doc) {
   max-width: none;
   margin: none;
 }
 
-.api-doc
-.page {
+.page.doc:has(.api-doc) {
   max-width: none;
 }
