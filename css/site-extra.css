@@ -472,8 +472,21 @@ td, p {
   color:#0c322c;
 }
 
-.doc .admonitionblock .title, .doc .exampleblock .title, .doc .imageblock .title, .doc .listingblock .title, .doc .literalblock .title, .doc .openblock .title, .doc .tableblock caption {
+.doc .admonitionblock .title, .doc .exampleblock .title, .doc .listingblock .title, .doc .literalblock .title, .doc .openblock .title, .doc .tableblock caption {
   color: white;
+  font-size: .88889rem;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  letter-spacing: .01em;
+  padding-bottom: .075rem;
+  text-align: left;
+}
+
+.doc .imageblock .title {
+  background-color: transparent;
   font-size: .88889rem;
   font-weight: 500;
   font-style: normal;
